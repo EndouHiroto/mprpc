@@ -68,12 +68,12 @@ CMakeLists.txt：顶层的cmake文件
 README.md：项目自述文件
 autobuild.sh：一键编译脚本
 ```
-`autobuild.sh`是项目的一键编译脚本
-项目最终会编译完成后提供给用户的是三个静态库和头文件，都放在lib下面
-`libhrpc_net.a`：网络库
-`libhrpc_util.a`：工具库
-`libhrpc.a`：rpc库
-`include目录`
+- `autobuild.sh`是项目的一键编译脚本  
+- 项目最终会编译完成后提供给用户的是三个静态库和头文件，都放在lib下面
+  - `libhrpc_net.a`：网络库
+  - `libhrpc_util.a`：工具库
+  - `libhrpc.a`：rpc库
+  - `include目录`
 
 ## 五. 项目分支
 目前项目有三个分支：
