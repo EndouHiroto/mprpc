@@ -39,24 +39,30 @@ Zookeeper安装配置
 Zookeeper是在分布式环境中应用非常广泛，它的优秀功能很多，比如分布式环境中全局命名服务，服务注册中心，全局分布式锁等等，本项目只用到服务注册。参考链接：https://www.cnblogs.com/xinyonghu/p/11031729.html
 
 下载地址：链接: https://pan.baidu.com/s/1yPl1aNGuC7OVabs5icw1Ag?pwd=92xe 提取码: 92xe
-
+```
 1、下载zookeeper-3.4.10.tar.gz解压后进入zookeeper-3.4.10
 2. cd zookeeper-3.4.10/conf
 3. mv zoo_sample.cfg zoo.cfg
 4. 进入bin目录，启动zkServer， ./zkServer.sh start
 5. 可以通过netstat查看zkServer的端口，在bin目录启动zkClient.sh链接zkServer，熟悉zookeeper怎么组织节点
+```
 zk的原生开发API（c/c++接口）
 
 进入上面解压目录src/c下面，zookeeper已经提供了原生的C/C++和Java API开发接口，需要通过源码编译生成，过程如下：
+```
 ~/package/zookeeper-3.4.10/src/c$ sudo ./confifigure
 ~/package/zookeeper-3.4.10/src/c$ sudo make
 ~/package/zookeeper-3.4.10/src/c$ sudo make install
+```
 主要关注zookeeper怎么管理节点，zk-c API怎么创建节点，获取节点，删除节点以及watcher机制的API编程。
 zk客户端常用命令
 
+```
 ls、get、create、set、delete
+```
 
 ## 四. 项目目录结构
+```
 bin：可执行文件，这里放的是example编译好的二进制文件
 build：项目编译文件
 lib：项目库文件
@@ -66,12 +72,13 @@ example：框架代码使用范例
 CMakeLists.txt：顶层的cmake文件
 README.md：项目自述文件
 autobuild.sh：一键编译脚本
-autobuild.sh是项目的一键编译脚本
+```
+`autobuild.sh`是项目的一键编译脚本
 项目最终会编译完成后提供给用户的是三个静态库和头文件，都放在lib下面
-libhrpc_net.a：网络库
-libhrpc_util.a：工具库
-libhrpc.a：rpc库
-include目录
+`libhrpc_net.a`：网络库
+`libhrpc_util.a`：工具库
+`libhrpc.a`：rpc库
+`include目录`
 ## 五. 项目分支
 目前项目有三个分支：
 
