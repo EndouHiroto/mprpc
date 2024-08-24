@@ -69,10 +69,8 @@ README.md：项目自述文件
 autobuild.sh：一键编译脚本
 ```
 - `autobuild.sh`是项目的一键编译脚本  
-- 项目最终会编译完成后提供给用户的是三个静态库和头文件，都放在lib下面
-  - `libhrpc_net.a`：网络库
-  - `libhrpc_util.a`：工具库
-  - `libhrpc.a`：rpc库
+- 项目最终会编译完成后提供给用户的是一个个静态库和头文件目录，都放在lib下面  
+  - `libmprpc.a`：rpc库
   - `include目录`
 
 ## 五. 项目分支
