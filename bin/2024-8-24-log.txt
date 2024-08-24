@@ -1,0 +1,12 @@
+15:36:21 => [info] service_name:FriendServiceRpc
+15:36:21 => [info] method_name:GetFriendsList
+15:36:21 => [info] RpcProvider start service at ip:127.0.0.1  port:6000
+15:37:55 => [info] service_name:FriendServiceRpc
+15:37:55 => [info] method_name:GetFriendsList
+15:37:55 => [info] RpcProvider start service at ip:127.0.0.1  port:6000
+15:40:46 => [info] service_name:FriendServiceRpc
+15:40:46 => [info] method_name:GetFriendsList
+15:40:46 => [info] RpcProvider start service at ip:127.0.0.1  port:6000
+16:2:20 => [info] service_name:FriendServiceRpc
+16:2:20 => [info] method_name:GetFriendsList
+16:2:20 => [info] RpcProvider start service at ip:127.0.0.1  port:6000
