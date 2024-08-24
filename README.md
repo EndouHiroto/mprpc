@@ -21,7 +21,7 @@
 - ubuntu下 protobuf环境搭建  
     下载地址:https://github.com/google/protobuf
     
-安装过程如下：
+  安装过程如下：
 ```
   1、解压压缩包：unzip protobuf-master.zip
   2、进入解压后的文件夹：cd protobuf-master
