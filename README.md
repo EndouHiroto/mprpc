@@ -24,6 +24,7 @@ protobuf（protocol buffffer）是google 的一种数据交换的格式，它独
 ubuntu下 protobuf环境搭建
 
 在github源代码下载**地址：https://github.com/google/protobuf，源码包中的src/README.md，有详细的安装说明，安装过程如下：
+```
 1、解压压缩包：unzip protobuf-master.zip
 2、进入解压后的文件夹：cd protobuf-master
 3、安装所需工具：sudo apt-get install autoconf automake libtool curl make g++ unzip
@@ -32,6 +33,7 @@ ubuntu下 protobuf环境搭建
 6、编译源代码(时间比较长)：make
 7、安装：sudo make install
 8、刷新动态库：sudo ldconfig
+```
 Zookeeper安装配置
 
 Zookeeper是在分布式环境中应用非常广泛，它的优秀功能很多，比如分布式环境中全局命名服务，服务注册中心，全局分布式锁等等，本项目只用到服务注册。参考链接：https://www.cnblogs.com/xinyonghu/p/11031729.html
