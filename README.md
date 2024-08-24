@@ -32,7 +32,7 @@
   7、安装：sudo make install
   8、刷新动态库：sudo ldconfig
 ```
-### 2.Zookeeper安装配置
+  ### 2.Zookeeper安装配置
 
 Zookeeper是在分布式环境中应用非常广泛，它的优秀功能很多，比如分布式环境中全局命名服务，服务注册中心，全局分布式锁等等，本项目只用到服务注册。参考链接：https://www.cnblogs.com/xinyonghu/p/11031729.html
 
