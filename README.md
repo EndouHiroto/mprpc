@@ -79,6 +79,4 @@ autobuild.sh：一键编译脚本
   - `master`，该分支是基于muduo网络库作为通信基础的，所以在使用该分支代码的时候还需要安装muduo，安装方法参考链接: [https://blog.csdn.net/QIANGWEIYUAN/article/details/89023980](https://blog.csdn.net/QIANGWEIYUAN/article/details/89023980)  
   - `master_net`，该分支网络库是自己基于reactor模式开发的一套单线程c++网络库，部分代码参考muduo，可以供学习muduo。
   - `release/1.0`，基于master分支拉出来的一个稳定分支。
-  
-## .六 RPC服务调用过程  
-![图片加载失败](C:\Users\lenovo\Pictures\Saved Pictures "RPC服务调用过程图解")
+
