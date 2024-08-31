@@ -71,9 +71,8 @@ muduo库源码github仓库地址：https://github.com/chenshuo/muduo
     mv muduo/ /usr/include/  
     cd build/release-install-cpp11/lib/  
     mv * /usr/local/lib/
-  8、刷新动态库：sudo ldconfig
+  8、使用muduo库编写一个简单的服务器，测试muduo库是否可以正常使用
 ```
-
 
 ## 四. 项目目录结构
 ```
