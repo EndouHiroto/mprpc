@@ -59,9 +59,10 @@ Zookeeper是在分布式环境中应用非常广泛，它的优秀功能很多�
 ``【注意】：muduo库是基于boost开发的，所以需要先在Linux平台上安装boost库：https://blog.csdn.net/QIANGWEIYUAN/article/details/88792874``  
 muduo库源码github仓库地址：https://github.com/chenshuo/muduo  
 ```
-  1、解压压缩包：unzip protobuf-master.zip
-  2、进入解压后的文件夹：cd protobuf-master
-  3、安装所需工具：sudo apt-get install autoconf automake libtool curl make g++ unzip
+  1、解压压缩包：unzip muduo-master.zip
+  2、进入解压后的文件夹：cd muduo-master
+  3、muduo库源码编译会编译很多unit_test测试用例代码，编译耗时长，我们也用不到，注释掉CMakeLists.txt中的  
+    option(MUDUO_BUILD_EXAMPLES "Build Muduo examples" ON)
   4、自动生成confifigure配置文件：./autogen.sh
   5、配置环境：./confifigure 
   6、编译源代码(时间比较长)：make
