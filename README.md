@@ -63,10 +63,14 @@ muduo库源码github仓库地址：https://github.com/chenshuo/muduo
   2、进入解压后的文件夹：cd muduo-master
   3、muduo库源码编译会编译很多unit_test测试用例代码，编译耗时长，我们也用不到，注释掉CMakeLists.txt中的  
     option(MUDUO_BUILD_EXAMPLES "Build Muduo examples" ON)
-  4、自动生成confifigure配置文件：./autogen.sh
-  5、配置环境：./confifigure 
-  6、编译源代码(时间比较长)：make
-  7、安装：sudo make install
+  4、安装cmake：sudo apt-get install cmake
+  5、执行build.sh程序：./build.sh
+  6、编译完成后，进行muduo库安装：./build.sh install
+  7、把inlcude和lib目录下的文件拷贝到系统目录下：  
+    cd build/release-install-cpp11/include/  
+    mv muduo/ /usr/include/  
+    cd build/release-install-cpp11/lib/  
+    mv * /usr/local/lib/
   8、刷新动态库：sudo ldconfig
 ```
 
