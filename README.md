@@ -54,7 +54,14 @@ Zookeeper是在分布式环境中应用非常广泛，它的优秀功能很多�
 主要关注zookeeper怎么管理节点，zk-c API怎么创建节点，获取节点，删除节点以及watcher机制的API编程。
 - zk客户端常用命令
   
-  ``ls、get、create、set、delete``
+  ``ls、get、create、set、delete``  
+  
+  ### 3.muduo网络库安装配置  
+  ``【注意】：muduo库是基于boost开发的，所以需要先在Linux平台上安装boost库``  
+  https://blog.csdn.net/QIANGWEIYUAN/article/details/88792874  
+  muduo库源码github仓库地址：https://github.com/chenshuo/muduo
+
+
 
 ## 四. 项目目录结构
 ```
