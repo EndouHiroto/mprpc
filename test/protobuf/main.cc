@@ -53,6 +53,5 @@ int main1()
         std::cout << reqB.name() << std::endl;
         std::cout << reqB.pwd() << std::endl;
     }
-
     return 0;
 }
