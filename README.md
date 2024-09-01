@@ -55,6 +55,25 @@ Zookeeper是在分布式环境中应用非常广泛，它的优秀功能很多�
 - zk客户端常用命令
   
   ``ls、get、create、set、delete``
+### 3.muduo网络库安装配置  
+``【注意】：muduo库是基于boost开发的，所以需要先在Linux平台上安装boost库,安装方法参考链接：``[https://blog.csdn.net/QIANGWEIYUAN/article/details/88792874](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792874)
+  
+muduo库源码github仓库地址：https://github.com/chenshuo/muduo  
+```
+  1、解压压缩包：unzip muduo-master.zip
+  2、进入解压后的文件夹：cd muduo-master
+  3、muduo库源码编译会编译很多unit_test测试用例代码，编译耗时长，我们也用不到，注释掉CMakeLists.txt中的  
+    option(MUDUO_BUILD_EXAMPLES "Build Muduo examples" ON)
+  4、安装cmake：sudo apt-get install cmake
+  5、执行build.sh程序：./build.sh
+  6、编译完成后，进行muduo库安装：./build.sh install
+  7、把inlcude和lib目录下的文件拷贝到系统目录下：  
+    cd build/release-install-cpp11/include/  
+    mv muduo/ /usr/include/  
+    cd build/release-install-cpp11/lib/  
+    mv * /usr/local/lib/
+  8、使用muduo库编写一个简单的服务器，测试muduo库是否可以正常使用
+```
 
 ## 四. 项目目录结构
 ```
@@ -79,3 +98,4 @@ autobuild.sh：一键编译脚本
   - `master`，该分支是基于muduo网络库作为通信基础的，所以在使用该分支代码的时候还需要安装muduo，安装方法参考链接: [https://blog.csdn.net/QIANGWEIYUAN/article/details/89023980](https://blog.csdn.net/QIANGWEIYUAN/article/details/89023980)  
   - `master_net`，该分支网络库是自己基于reactor模式开发的一套单线程c++网络库，部分代码参考muduo，可以供学习muduo。
   - `release/1.0`，基于master分支拉出来的一个稳定分支。
+
