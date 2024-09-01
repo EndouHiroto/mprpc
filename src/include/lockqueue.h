@@ -22,7 +22,7 @@ public:
     T Pop()
     {
         std::unique_lock<std::mutex> lock(m_mutex);
-        while(m_queue.empty())
+        while(m_queue.empty())  //用while而不用if，防止线程的虚假唤醒。虚假唤醒是指线程在没有其他线程显式地对其进行唤醒操作的情况下被唤醒。
         {
             //日志队列为空，线程进入wait状态，并释放锁
             m_condvariable.wait(lock);

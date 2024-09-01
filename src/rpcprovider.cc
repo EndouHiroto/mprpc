@@ -99,7 +99,7 @@ void RpcProvider::OnConnection(const muduo::net::TcpConnectionPtr &conn)
                                         service_name method_name args_size
     16UserServiceLoginzhang san123456
 
-    header_size(4个字节) + method_str + args_str
+    header_size(4个字节) + header_str(service_name method_name args_size) + args_str
     10 "10"
     10000 "10000"
     std::string     insert和copy方法
@@ -153,7 +153,7 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
     auto it = m_serviceMap.find(service_name);
     if(it == m_serviceMap.end())
     {
-        std::cout << service_name << " is not exist!" << std::endl;
+        //std::cout << service_name << " is not exist!" << std::endl;
         LOG_ERR("%s is not exist!",service_name.c_str());
         return;
     }
